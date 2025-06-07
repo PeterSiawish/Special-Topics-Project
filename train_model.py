@@ -27,5 +27,5 @@ print("Accuracy:", accuracy_score(y_test, y_pred))
 print("Classification Report:\n", classification_report(y_test, y_pred))
 
 # Save the trained model
-# joblib.dump(knn_model, "personality_model.pkl")
-# print("Model saved as personality_model.pkl")
+joblib.dump(knn_model, "personality_model.pkl")
+print("Model saved as personality_model.pkl")
