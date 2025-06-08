@@ -57,7 +57,8 @@ It's best practice to create a dedicated virtual environment for your project to
 python -m venv venv
 ```
 
-Then activate the virtual environment:
+Then activate the virtual environment
+
 On Windows:
 
 ```bash
