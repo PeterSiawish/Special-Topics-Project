@@ -89,5 +89,24 @@ if submitted:
     st.success(f"### {label_map[prediction]}") # Larger, bolder prediction
     st.info(f"🔍 Model Confidence: **{confidence:.2f}%**")
     st.markdown(f"*{personality_description[prediction]}*") # Add a brief description
-    
+    tips = {
+    0: [
+        "Schedule alone time to recharge regularly.",
+        "Engage in 1-on-1 or small group interactions.",
+        "Don’t feel pressured to attend every social event."
+    ],
+    1: [
+        "Join clubs or group activities you enjoy.",
+        "Balance your energy by occasionally unplugging.",
+        "Use your social strengths to network and collaborate."
+    ]
+    }
+
+    st.subheader("💬 Personality-Based Suggestions")
+    for tip in tips[prediction]:
+        st.write(f"✅ {tip}")
+
     st.balloons() # Fun little animation for success!
+
+st.markdown("---")
+st.caption("🛠️ Created by Peter Siawish • Machine Learning Project • June 2025")
