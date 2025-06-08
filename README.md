@@ -55,9 +55,9 @@ It's best practice to create a dedicated virtual environment for your project to
 
 ```bash
 python -m venv venv
-Activate the virtual environment:
 ```
 
+Then activate the virtual environment:
 On Windows:
 
 ```bash
@@ -83,7 +83,7 @@ pip install -r requirements.txt
 Once all dependencies are installed, you can launch the Streamlit application:
 
 ```bash
-streamlit run app.py
+streamlit run gui_app.py
 ```
 
 This command will automatically open the application in your default web browser, usually at http://localhost:8501.
