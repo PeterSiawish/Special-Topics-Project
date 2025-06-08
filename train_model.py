@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import joblib
 
 # Load cleaned dataset
-df = pd.read_csv("cleaned_personality_dataset.csv")
+df = pd.read_csv("./datasets/cleaned_personality_dataset.csv")
 
 # Set X = Features and y = target
 X = df.drop("Personality", axis=1)

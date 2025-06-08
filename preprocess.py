@@ -2,7 +2,7 @@
 import pandas as pd
 
 # Import the .csv file as a pandas dataframe
-df = pd.read_csv("./personality_dataset.csv")
+df = pd.read_csv("./datasets/personality_dataset.csv")
 
 # Display first 15 rows of the dataset
 df.head(15)
@@ -48,4 +48,4 @@ print(df.info())
 print(df.describe())
 
 # Step 5: Save the clean data as a new .csv file
-df.to_csv("cleaned_personality_dataset.csv", index=False)
+df.to_csv("./datasets/cleaned_personality_dataset.csv", index=False)
